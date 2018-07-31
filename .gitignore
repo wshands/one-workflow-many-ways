@@ -1,7 +1,7 @@
 cromwell-*
 cwl/local_workflow.yml
 wdl/local_bamqc_inputs.json
-nextflow/local_nextflow.config
+nextflow-workflow/local_nextflow.config
 venv
 bamqc_result.json
 out_*
