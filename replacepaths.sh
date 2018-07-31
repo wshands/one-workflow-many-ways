@@ -11,4 +11,4 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # the inputs need absolute paths, so replace the paths in the json file
 perl -p -e "s|REPLACEME|${DIR}|g" "${DIR}/cwl/workflow.yml" > "${DIR}/cwl/local_workflow.yml"
 perl -p -e "s|REPLACEME|${DIR}|g" "${DIR}/wdl/bamqc_inputs.json" > "${DIR}/wdl/local_bamqc_inputs.json"
-
+perl -p -e "s|REPLACEME|${DIR}|g" "${DIR}/nextflow/nextflow.config" > "${DIR}/nextflow/local_nextflow.config"
