@@ -17,4 +17,4 @@ if [ ! -f nextflow ]; then
     curl -s https://get.nextflow.io | bash
 fi
 
-./nextflow run "${DIR}nextflow/main.nf" -c "${DIR}nextflow/local_nextflow.config"
+./nextflow run "${DIR}/nextflow-workflow/main.nf" -c "${DIR}/nextflow-workflow/local_nextflow.config"
