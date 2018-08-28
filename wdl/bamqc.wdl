@@ -10,6 +10,11 @@ workflow BamQC {
     call bamqc { 
         input : samtools=SAMTOOLS, bamfile=BAMFILE, xtra_json=flagstat.flagstat_json
     }
+    meta {
+        author: "Morgan Taschuk"
+        email: "Morgan.Taschuk@oicr.on.ca"
+        description: "Implementing bamqc over and over again to get an idea of how easy or hard it is for a beginner to implement a basic workflow in different workflow systems."
+    }
 }
 
 task flagstat {
