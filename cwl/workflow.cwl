@@ -2,6 +2,8 @@
 
 cwlVersion: v1.0
 class: Workflow
+doc: |
+    Implementing bamqc over and over again to get an idea of how easy or hard it is for a beginner to implement a basic workflow in different workflow systems.
 inputs:
   bamfile:
     type: File
@@ -42,3 +44,8 @@ steps:
       bamqc_pl: bamqc_pl
       xtra_json: flagstat_json/flagstat_json
     out: [ outjson ]
+
+s:author:
+  - class: s:Person
+    s:email: Morgan.Taschuk@oicr.on.ca
+    s:name: Morgan Taschuk
