@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-
+This is an invalid file
 Channel
     .fromPath(params.bamfile)
     .into{ flagstat_bamfile; bamqc_bamfile}
